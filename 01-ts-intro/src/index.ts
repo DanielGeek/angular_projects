@@ -4,11 +4,17 @@
 */
 
 class Heroe {
-     alterEgo: string;
-     edad: number;
-     nombreReal: number;
+    //  public alterEgo: string;
+    //  public edad: number;
+    //  public nombreReal: number;
+
+     constructor(
+         public alterEgo: string,
+         public edad?: number,
+         public nombreReal?: string
+         ) {}
 }
 
-const ironman = new Heroe();
+const ironman = new Heroe('Ironman', 45, 'Tony');
 
 console.log(ironman);
