@@ -1,7 +1,12 @@
 <mat-card>
     <mat-card-header>
         <mat-form-field>
-            <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+            <input matInput type="text" [(ngModel)]="enteredTitle" >
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-header>
+        <mat-form-field>
+            <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
         </mat-form-field>
     </mat-card-header>
     <mat-card-actions>
