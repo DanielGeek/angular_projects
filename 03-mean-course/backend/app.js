@@ -18,7 +18,7 @@ app.use("/api/posts", (req, res, next) => {
 
     res.status(200).json({
         message: 'Posts fetched successfully!',
-        posts: posts
+        posts
     });
 });
 
